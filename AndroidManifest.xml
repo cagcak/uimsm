@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iaau.mas.uimsm"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+
+        <!-- /////////////// 1st Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- /////////////// 2nd Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+        <!-- /////////////// 3rd Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.HelpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+        <!-- /////////////// 4th Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.HomeActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/home_activity_title"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+         <!-- /////////////// 5th Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.resultant.Activity_Subject_Detail"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/subject_details_title"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+         <!-- /////////////// 6th Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.resultant.Activity_Transcript_Detail"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/transcript_details_title"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+		<!-- /////////////// 7th Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.resultant.Activity_Registration_Confirm"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/registration_confirm"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+        <!-- /////////////// 8th Activity ///////////////////////// -->
+        <activity
+            android:name="iaau.mas.uimsm.resultant.Activity_Registration_Detail"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/registration_result"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
